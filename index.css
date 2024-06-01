@@ -8,6 +8,7 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
 .navi {
     display: flex;
 }
@@ -69,6 +70,28 @@ nav ul li a {
     padding: 50px 0;
 }
 
+.why_us {
+    background-color: rgb(88, 177, 255);
+    padding: 50px 0;
+}
+.why_us h2{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#why_us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.choose {
+    text-align: center;
+}
+
 .products {
     background-color: skyblue;
     padding: 50px 0;
@@ -95,7 +118,7 @@ nav ul li a {
     text-align: center;
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .product img {
