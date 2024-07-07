@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    color: #333;
 }
 
 .container {
@@ -9,126 +13,160 @@ body {
     margin: 0 auto;
 }
 
-.navi {
-    display: flex;
-}
-
 header {
-    background-color: #f8f8f8;
+    background: #ffffff;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #cce7ff;
 }
 
 header h1 {
-    margin: 10px;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style-type: none;
     margin: 0;
+    text-align: center;
+    color: #0073e6;
+}
+
+.navi {
+    margin-top: 10px;
+}
+
+.navi nav ul {
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
-nav ul li {
+.navi nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
-nav ul li a {
+.navi nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0073e6;
+    font-weight: bold;
 }
 
 .hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: gray;
+    background: #e6f7ff;
+    padding: 50px 0;
     text-align: center;
-    padding: 100px 0;
 }
 
 .hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    margin: 0;
+    color: #004d99;
 }
 
-.btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.btn:hover {
-    background-color: #45a049;
+.hero p {
+    margin: 10px 0 0;
+    color: #003366;
 }
 
-.who_are_we {
-    background-color: antiquewhite;
+#About {
     padding: 50px 0;
+    background: #ffffff;
+}
+
+.who_are_we .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.who_are_we .about-content img.about-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #cce7ff;
+}
+
+.who_are_we p {
+    text-align: justify;
+    color: #333;
 }
 
 .why_us {
-    background-color: rgb(88, 177, 255);
     padding: 50px 0;
-}
-.why_us h2{
-    padding: 20px;
-    width: 80%;
-    margin: 0 auto;
+    text-align: center;
+    background: #f0faff;
 }
 
 #why_us {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .choose {
+    margin: 0 20px;
     text-align: center;
+    background: #ffffff;
+    border: 2px solid #cce7ff;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.products {
-    background-color: skyblue;
+.choose h3 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #0073e6;
+}
+
+#Products {
     padding: 50px 0;
+    background: #e6f7ff;
 }
 
-.product {
+.products .product-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.products .product-item {
+    background: #ffffff;
+    border: 2px solid #cce7ff;
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 50px;
+    border-radius: 10px;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.product-item {
-    width: 250px;
-    min-width: 199px;
-    height: 260px;
-    text-align: center;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-
-.product img {
+.products .product-item img {
     max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.products .product-item h3 {
+    margin: 20px 0 10px;
+    color: #0073e6;
+}
+
+.products .product-item p {
+    color: #666;
+}
+
+.products .product-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0073e6;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
 }
 
+.products .product-item .btn:hover {
+    background: #004d99;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    background: #ffffff;
     padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #cce7ff;
+    color: #333;
 }
