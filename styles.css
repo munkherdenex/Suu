@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Light background for better readability */
 }
 
 .container {
@@ -10,19 +11,20 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 header h1 {
-    margin: 5;
+    margin: 0;
+    color: #0073e6; /* Match with the brand color */
+    font-size: 1.5em;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-top: 10px;
 }
 
 nav ul li {
@@ -32,20 +34,27 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0073e6; /* Match with the brand color */
+    font-weight: bold;
 }
 
 .contact {
+    background-color: #ffffff; /* White background for form */
     padding: 50px 0;
+    border-top: 2px solid #e0e0e0;
 }
 
 .contact h2 {
-    font-size: 24px;
+    font-size: 28px; /* Larger heading for better emphasis */
     margin-bottom: 20px;
+    color: #0073e6; /* Match with the brand color */
+    text-align: center;
 }
 
 .contact p {
     margin-bottom: 30px;
+    text-align: center;
+    color: #333;
 }
 
 .form-group {
@@ -55,6 +64,7 @@ nav ul li a {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
 .form-group input,
@@ -63,20 +73,22 @@ nav ul li a {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .btn {
-    background-color: #4CAF50;
+    background-color: #0073e6; /* Match with the brand color */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #005bb5; /* Darker shade for hover effect */
 }
 
 footer {
